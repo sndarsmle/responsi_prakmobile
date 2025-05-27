@@ -195,7 +195,6 @@ implements MovieView {
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
-                                          // Title
                                           Text(
                                             movie.title,
                                             style: const TextStyle(
@@ -204,7 +203,6 @@ implements MovieView {
                                             ),
                                           ),
                                           const SizedBox(height: 4),
-                                          // Rating
                                           Text(
                                             "Rating: ${movie.rating}",
                                             style: const TextStyle(
@@ -212,7 +210,6 @@ implements MovieView {
                                             ),
                                           ),
                                           const SizedBox(height: 4),
-                                          // Genre
                                           Text(
                                             "Genre: ${movie.genre.join(', ')}",
                                             style: const TextStyle(
@@ -220,7 +217,6 @@ implements MovieView {
                                             ),
                                           ),
                                           const SizedBox(height: 4),
-                                          // Duration <<<--- TAMBAH INI
                                           Text(
                                             "Duration: ${movie.duration}",
                                             style: const TextStyle(
@@ -230,7 +226,6 @@ implements MovieView {
                                         ],
                                       ),
                                     ),
-                                    // Ikon favorit di pojok kanan
                                     IconButton(
                                       icon: Icon(
                                         isFavorite ? Icons.favorite : Icons.favorite_border,
